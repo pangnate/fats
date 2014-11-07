@@ -2,7 +2,7 @@
 
 该命令可以启动一个web服务器，用于预览本地项目。
 
-	cd /workspace/myProject    
+	cd /dir/to/project    
 	fats server start --watch on --port 3000
 
 此时系统会自动启动浏览器，打开项目的默认首页。
