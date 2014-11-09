@@ -1,6 +1,6 @@
 {
 	"name": "fats",
-	"description": "Front-end automation tools",
+	"description": "Front-end automation tools syatem",
 	"version": "0.2.0",
 	"author": {
 		"name": "pangnate",
@@ -20,7 +20,7 @@
 	],
 	"keywords": [
 		"fats",
-		"front-end automation tools"
+		"front-end automation tools syatem"
 	],
 	"bin": {
 		"fats": "bin/fats"
@@ -32,10 +32,10 @@
 	"dependencies": {
 		"colors": "^0.6.2",
 		"commander": "^2.3.0",
-		"fats-command-init": "0.1.8",
-		"fats-command-release": "0.1.4",
+		"fats-command-init": "0.1.9",
+		"fats-command-release": "0.1.5",
 		"fats-command-server": "0.1.8",
-		"fats-kernel": "0.1.9"
+		"fats-kernel": "0.2.0"
 	},
 	"repository": {
 		"type": "git",
