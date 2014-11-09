@@ -29,6 +29,7 @@ fats 未来还将具备以下功能：
 2. [开发调试（fats server）](./docs/fats-server.md)
 3. [数据及接口模拟](./docs/mock.md)
 4. [编译与发布（fats release）](./docs/fats-release.md)
+5. [任务配置（Fatsfile.js）](./docs/Fatsfile.md)
 
 
 从功能到代码，fats 还很简陋，但我们会努力让她变得更好。
