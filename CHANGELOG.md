@@ -1,3 +1,9 @@
+## 0.2.2 / 2014-11-10
+
+HOTFIX
+    
+    修复 package.json 中版本依赖错误    
+
 ## 0.2.1 / 2014-11-10
 
 升级 fis-command-release 至 0.1.6  
