@@ -16,7 +16,7 @@
 
 Fatsfile.js 可用的 **`<TaskName>`** 有：
 	
-	clean       : 清理目
+	clean       : 清理目录
 	csslint     : 校验css
 	jshint      : 校验js
 	uglify      : 压缩合并js
@@ -123,6 +123,6 @@ Fatsfile.js 可用的 **`<TaskName>`** 有：
 	}
 
 
-所有文件格式都支持 src 和 dest 属性、"简洁格式" 与 "文件数组格式"
+uglify / cleancss 任务配置的所有文件格式都支持 src 和 dest 属性、"简洁格式" 与 "文件数组格式"
 
 
