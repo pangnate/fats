@@ -3,7 +3,7 @@
 该命令可以启动一个web服务器，用于预览本地项目。
 
 	cd /dir/to/project    
-	fats server start --watch on --port 3000
+	fats server start --watch --port 3000
 
 此时系统会自动启动浏览器，打开项目的默认首页。
 
@@ -24,7 +24,7 @@ Commands:
 **start**  
 
 	fats server start
-	fats server start --port 3000 --root /path/to/dir --watch off
+	fats server start --port 3000 --root /path/to/dir --watch
 
 **restart**  
 
@@ -39,7 +39,7 @@ Options
 **--root, -r**  : web服务器指向的根目录 `--root /path/to/dir`，如果不传递该参数，则使用当前执行目录作为根目录    
 **--hostname, -n**  : 服务器使用的主机名，如果不传递该参数，则使用 `ip` 作为主机名。使用前需要在 `hosts` 文件中添加相应规则     
 **--port, -p**  : web服务器使用的端口 `--port 8080`，`(default 3000)`    
-**--watch, -w**  : 修改代码后浏览器自动刷新 `--watch on`，`(default off)`  
+**--watch, -w**  : 修改代码后浏览器自动刷新，无需传递参数    
 
 ### **[Q&A]**
 
