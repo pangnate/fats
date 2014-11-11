@@ -24,7 +24,7 @@ fats 要求 Node.js 版本 >= 0.8.0。
 ## 启动web服务器
 
 1. 进入到项目目录 `cd /dir/to/project`；
-2. 运行 `fats server start --watch on`，此时会自动启动默认浏览器，打开项目首页；
+2. 运行 `fats server start --watch`，此时会自动启动默认浏览器，打开项目首页；
 3. 如果浏览器没有自动启动，可以打开 `http://localhost:3000` 访问项目；
 
 OK，现在就可以随便编辑代码，保存看一下会发生什么吧！  
