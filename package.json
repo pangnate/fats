@@ -20,7 +20,7 @@
 	],
 	"keywords": [
 		"fats",
-		"front-end automation tools syatem"
+		"front-end automation tools system"
 	],
 	"bin": {
 		"fats": "bin/fats"
