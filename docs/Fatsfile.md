@@ -28,7 +28,7 @@ Fatsfile.js 可用的 **`<TaskName>`** 有：
 		/*
 		 * foo、bar 为用户自定义分组名
 		 * 每个自定义任务分组需要一个配置项 files，必需
-		 * files 的值可以使一个数组或字符串
+		 * src 的值可以使一个数组或字符串
 		 * 数组项及字符串可以使用通配符匹配文件
 		 * 分组的 options 会覆盖上一层的 options 设置
 		 * clean 不支持 options 项
