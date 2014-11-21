@@ -73,7 +73,7 @@ Fatsfile.js 可用的 **`<TaskName>`** 有：
 			},
 			src: 'js/(?!.*(jquery|min)).*.js',  // 合并所有非jquery及min文件
 			dest: 'js/<%= pkg.name %>.min.js'
-		}
+		},
 		bar: {
 			'js/test.min.js': 'js/test.js'
 		}
