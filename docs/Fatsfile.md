@@ -55,10 +55,9 @@ Fatsfile.js 可用的 **`<TaskName>`** 有：
 	<TaskName>: {
 
 		/*
-		 * build 为用户自定义分组名
 		 * options 为参数控制，可以设置压缩合并后的 banner 
 		 * options 的 urlPrefix 项为 cleancss 特有，可以设置背景图前缀
-		 * foo、bar 为用户自定义子分组名，可以细粒度控制合并规则
+		 * foo、bar 为用户自定义分组名，可以细粒度控制合并规则
 		 * 分组的 options 会覆盖上一层的 options 设置
 		 */
     	
@@ -68,17 +67,15 @@ Fatsfile.js 可用的 **`<TaskName>`** 有：
 					'<%= fats.template.today("YYYY-MM-DD hh:mm:ss") %> ' +
 					'*/\n'
 		},
-		build: {
+		foo: {
 			options: {
 				urlPrefix: 'http://css.suning.cn'
 			},
-			foo: {
-				src: 'js/(?!.*(jquery|min)).*.js',  // 合并所有非jquery及min文件
-				dest: 'js/<%= pkg.name %>.min.js'
-			},
-			bar: {
-				'js/test.min.js': 'js/test.js'
-			}
+			src: 'js/(?!.*(jquery|min)).*.js',  // 合并所有非jquery及min文件
+			dest: 'js/<%= pkg.name %>.min.js'
+		}
+		bar: {
+			'js/test.min.js': 'js/test.js'
 		}
 	}
 或者使用文件数组格式  
