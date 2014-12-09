@@ -1,3 +1,17 @@
+## 0.2.3 / 2014-12-09
+
+升级 fis-command-release 至 0.1.7  
+升级 fis-command-server 至 0.1.9  
+升级 fis-kernel 至 0.2.1 
+
+HOTFIX
+    
+    server start -w 可以省略on参数
+	解决带有hash值页面刷新问题
+	修复文件校验错误过多时校验程序出错跳出
+	修复下级目录文件更改时不刷新的问题  
+	数据接口可以模拟延时  
+
 ## 0.2.2 / 2014-11-10
 
 HOTFIX
