@@ -23,10 +23,10 @@
 
 ## cookie 配置
 
-	// 字符串
+	// 字符串，仅适用于单个cookie
 	"cookie": "myKey=myValue"
 
-	// json 对象
+	// 对象
 	"cookie": {
 		"name": "pangnate",
 		"job": "fed"
@@ -56,22 +56,22 @@
 	}
 	
 	
-**2、普通js**
-
-	var str = 'some text';
-	return str;
+**2、js自执行函数**
+	
+	(function(){
+		var str = 'some text';
+		return str;
+	})();
+	
 
 **3、js模块**
 
 	module.exports = function (req, res, fats) {
-	
 		var a = [];
 		for(var i=0; i<10; i++){
 			a.push(i);
 		}
-		
 		return JSON.stringify(a);
-	
 	};
 
 
@@ -93,4 +93,20 @@ A: 有些情况我们需要测试跨域的jsonp接口，很简单：
 	http://mockapi.cnsuning.com:3000/mock/api-name
 
 来模拟不同域下面的接口。
+
+**Q: 如何模拟接口延时返回？**
+
+A: 有些情况我们需要模拟网络状况很差的情况下的接口，这也很简单：
+比如我们需要延时3秒返回结果，只需要在接口的 return 之前使用一个 `fats.sleep(3000);` 即可，完整代码如下：
+
+	module.exports = function (req, res, fats) {
+		var a = [];
+		for(var i=0; i<10; i++){
+			a.push(i);
+		}
+		fats.sleep(3000);
+		return JSON.stringify(a);
+	};
+
+注意延时返回只能采用模块化写法书写接口模拟文件；
 
